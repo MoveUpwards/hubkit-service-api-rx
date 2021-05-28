@@ -8,7 +8,7 @@
 import Alamofire
 import Foundation
 import HubkitModel
-import HubkitServiceApi
+import HubkitApi
 import Offenbach
 import RxSwift
 
