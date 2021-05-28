@@ -10,8 +10,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "HubkitServiceApiRx",
-            targets: ["HubkitServiceApiRx"]
+            name: "HubkitApiRx",
+            targets: ["HubkitApiRx"]
         ),
     ],
     dependencies: [
@@ -21,10 +21,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "HubkitServiceApiRx",
+            name: "HubkitApiRx",
             dependencies: [
                 .product(name: "HubkitModel", package: "hubkit-model-swift"),
-                .product(name: "HubkitServiceApi", package: "hubkit-service-api"),
+                .product(name: "HubkitApi", package: "hubkit-service-api"),
                 "RxSwift"
             ],
             path: "Sources"
