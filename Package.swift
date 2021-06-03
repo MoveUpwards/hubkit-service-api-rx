@@ -17,13 +17,11 @@ let package = Package(
     dependencies: [
         .package(name: "RxSwift", url: "https://github.com/ReactiveX/RxSwift.git", from: "6.0.0"),
         .package(url: "https://github.com/MoveUpwards/hubkit-service-api.git", from: "2.0.0"),
-        .package(url: "https://github.com/MoveUpwards/hubkit-model-swift.git", from: "2.0.0")
     ],
     targets: [
         .target(
             name: "HubkitApiRx",
             dependencies: [
-                .product(name: "HubkitModel", package: "hubkit-model-swift"),
                 .product(name: "HubkitApi", package: "hubkit-service-api"),
                 "RxSwift"
             ],
